@@ -1,0 +1,75 @@
+Request method:	GET
+Request URI:	https://dummyjson.com/products?limit=5&skip=1&select=title&select=price&select=rating
+Proxy:			<none>
+Request params:	<none>
+Query params:	limit=5
+				skip=1
+				select=[title, price, rating]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 12 Jan 2026 16:48:24 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1768236514
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+etag: W/"176-mA+3Zr+Xid32H9D27uflEhciA+Q"
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3TmCft6G00biFmZbJuNWqls36EC7sGxUTFRlvLTW488W0R9lzQdShXgKkxj3yI6adIjyuG8hx%2FuQYhVceXAVpYk%2FFKP0ebW%2BLc58sTY%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9bce24265bb7f4c9-FRA
+
+{
+    "products": [
+        {
+            "id": 2,
+            "title": "Eyeshadow Palette with Mirror",
+            "price": 19.99,
+            "rating": 2.86
+        },
+        {
+            "id": 3,
+            "title": "Powder Canister",
+            "price": 14.99,
+            "rating": 4.64
+        },
+        {
+            "id": 4,
+            "title": "Red Lipstick",
+            "price": 12.99,
+            "rating": 4.36
+        },
+        {
+            "id": 5,
+            "title": "Red Nail Polish",
+            "price": 8.99,
+            "rating": 4.32
+        },
+        {
+            "id": 6,
+            "title": "Calvin Klein CK One",
+            "price": 49.99,
+            "rating": 4.37
+        }
+    ],
+    "total": 194,
+    "skip": 1,
+    "limit": 5
+}
