@@ -8,7 +8,7 @@ public class LoginUser {
 
 
 	public String getUsername() {
-		return username;
+		return username;                       // getting username
 	}
 	public void setUsername(String username) {
 		this.username = username;
