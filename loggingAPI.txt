@@ -13,14 +13,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 12 Jan 2026 16:48:24 GMT
+Date: Fri, 30 Jan 2026 14:44:07 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 x-ratelimit-limit: 100
 x-ratelimit-remaining: 99
-x-ratelimit-reset: 1768236514
+x-ratelimit-reset: 1769784254
 x-dns-prefetch-control: off
 x-frame-options: SAMEORIGIN
 strict-transport-security: max-age=15552000; includeSubDomains
@@ -32,9 +32,9 @@ etag: W/"176-mA+3Zr+Xid32H9D27uflEhciA+Q"
 vary: Accept-Encoding
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3TmCft6G00biFmZbJuNWqls36EC7sGxUTFRlvLTW488W0R9lzQdShXgKkxj3yI6adIjyuG8hx%2FuQYhVceXAVpYk%2FFKP0ebW%2BLc58sTY%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mypVF3TYt5zG0VaXhO7TM55Xkt%2B1vd569s0Vdey%2BWk9YmaOgnARh81b60NWD13w6j2WIlo%2FTtFQO6rcoo7nfDZ2e55JOXS1InuLKLtI%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9bce24265bb7f4c9-FRA
+CF-RAY: 9c61beda0da95d9f-FRA
 
 {
     "products": [
