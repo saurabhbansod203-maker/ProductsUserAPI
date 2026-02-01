@@ -1,6 +1,6 @@
 Feature:   Ecommerce Products Verfication
 
-@AddProduct
+@AddProducts @Regression
 
 Scenario Outline: Adding products into Cart for Verification
 
@@ -47,6 +47,21 @@ Scenario: Verify that limit and skips the product with given values in parameter
 		         When the user select "LimitSkipProduct" with "GET" http method
 		         Then the user should recieve response with 200 ok status code
 
+
+@DeleteProducts
+
+Scenario Outline: Verify that after selecting Delete product api the product should be deleted from server
+
+				Given the user can able to delete from server
+				When User select "DeleteProduct" with "DELETE" http request and with given <id>
+				Then user data should be deleted from server with 200 ok status code
+				And In the response "isDeleted" should be "true"
+	
+Examples:
+					
+				| id  |
+				
+				|194|
 
 
 

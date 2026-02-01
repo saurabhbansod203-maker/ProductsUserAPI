@@ -169,11 +169,31 @@
     <version>3.5.4</version>
 </dependency>
 
+<!-- Source: https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
+<dependency>
+    <groupId>io.github.cdimascio</groupId>
+    <artifactId>dotenv-java</artifactId>
+    <version>3.2.0</version>
+    <scope>compile</scope>
+</dependency>
+
   	<dependency>
   		<groupId>BDD</groupId>
   		<artifactId>CucumberFrameworkAPI</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	
+  	<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j</artifactId>
+    <version>0.35.0</version>
+</dependency>
+
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-google-ai-gemini</artifactId>
+    <version>0.35.0</version>
+</dependency>
   	
   	<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api -->
 <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api -->

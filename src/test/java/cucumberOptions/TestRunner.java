@@ -17,7 +17,7 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @SelectClasspathResource("features") // folder under src/test/resources
 @IncludeEngines("cucumber")
 @ConfigurationParameter(key= GLUE_PROPERTY_NAME, value="stepDefination,stepDefination1")
-@IncludeTags(value = { "LimitSkipProduct"})
+@IncludeTags(value = {"AddProducts ", "LimitSkipProduct", "DeleteProducts"})
 //@ExcludeTags("AddProduct")
 @ConfigurationParameter(key= PLUGIN_PROPERTY_NAME, value="pretty")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "json:target/jsonReports/cucumber-report23.json")

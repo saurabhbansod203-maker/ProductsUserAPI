@@ -19,5 +19,11 @@ Examples:
  				  | emilys      | emilyspass  | 30
  	
 		  
+Scenario: Verify if the current user token get expired the user should refresh token with RefreshToken API
+
+					Given the user is having valid Credentials with username and password and exptime 
+					When user "RefreshToken" and send request with "POST" http call
+					Then User able to login successfully into account with 200 status code
+					 
 
 

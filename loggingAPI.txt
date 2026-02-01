@@ -1,3 +1,54 @@
+Request method:	POST
+Request URI:	https://dummyjson.com/products/add
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 195,
+    "title": "BMW Pencil",
+    "description": "The BMW Pencil Canister",
+    "category": "beauStationary",
+    "price": 14.99,
+    "rating": 5.64
+}
+HTTP/1.1 201 Created
+Date: Sun, 01 Feb 2026 17:32:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 127
+Connection: keep-alive
+Server: cloudflare
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1769967154
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+etag: W/"7f-M4yeYSlwnLNQwQI9bMDmLTAkOus"
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ieDp6iwy9Fe8RFCY%2FOzX7gKs9qHnXJhnZQJNcz0Kyq4VJWEs8bcsozi4FeGHfpbtAqoIJRDnLpxFxVjNiQwP7JX6EeVrRMunEt4%2Fd9o%3D"}]}
+CF-RAY: 9c73302c5a454d56-FRA
+
+{
+    "id": 195,
+    "title": "BMW Pencil",
+    "price": 14.99,
+    "rating": 5.64,
+    "description": "The BMW Pencil Canister",
+    "category": "beauStationary"
+}
 Request method:	GET
 Request URI:	https://dummyjson.com/products?limit=5&skip=1&select=title&select=price&select=rating
 Proxy:			<none>
@@ -13,14 +64,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 30 Jan 2026 14:44:07 GMT
+Date: Sun, 01 Feb 2026 17:32:32 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 x-ratelimit-limit: 100
 x-ratelimit-remaining: 99
-x-ratelimit-reset: 1769784254
+x-ratelimit-reset: 1769967160
 x-dns-prefetch-control: off
 x-frame-options: SAMEORIGIN
 strict-transport-security: max-age=15552000; includeSubDomains
@@ -32,9 +83,9 @@ etag: W/"176-mA+3Zr+Xid32H9D27uflEhciA+Q"
 vary: Accept-Encoding
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mypVF3TYt5zG0VaXhO7TM55Xkt%2B1vd569s0Vdey%2BWk9YmaOgnARh81b60NWD13w6j2WIlo%2FTtFQO6rcoo7nfDZ2e55JOXS1InuLKLtI%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LDzUsaP4IXBA3%2FyyCtGILFf9l9bIsvluD9OhiISoyYzBX465F0QS8r70HzGB6kQswz0b7xU%2BA6ydo07uw6VNuplmP8VbQk24XC8hV5E%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9c61beda0da95d9f-FRA
+CF-RAY: 9c733050eee49756-FRA
 
 {
     "products": [
@@ -72,4 +123,143 @@ CF-RAY: 9c61beda0da95d9f-FRA
     "total": 194,
     "skip": 1,
     "limit": 5
+}
+Request method:	DELETE
+Request URI:	https://dummyjson.com/products/195
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Sun, 01 Feb 2026 17:32:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1769967167
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+etag: W/"2d-932UNqWWNmI6domsJulfwWhGGYw"
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=urUb4%2BdZ2TagJa4sWfFto6%2F3MvYNsZtUN2S4lLpzCcKq8kCtgC6EWB4%2BbuCXkl1gn73VTmKJpfZc9cU9cUmcKx6sfpHzV1cS6puM%2Fsw%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9c7330749e09dc90-FRA
+
+{
+    "message": "Product with id '195' not found"
+}
+Request method:	DELETE
+Request URI:	https://dummyjson.com/products/194
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 01 Feb 2026 17:32:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 98
+x-ratelimit-reset: 1769967160
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+etag: W/"6c4-hx9czzfGXl3ZgXoytI+F/NhsTvA"
+vary: Accept-Encoding
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XT48sh%2B9VQ21Ia7Tie4wAmedeqQYzQrF%2BmArwnb4vT1XkWazXln1MKmtb05l7yp9ogbhtXNAgglBlts%2Bo1eDoYBdamYxUHVB%2F6IWxYA%3D"}]}
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Content-Encoding: gzip
+CF-RAY: 9c733077cb553635-FRA
+
+{
+    "id": 194,
+    "title": "Women's Wrist Watch",
+    "description": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+    "category": "womens-watches",
+    "price": 129.99,
+    "discountPercentage": 12.6,
+    "rating": 3.52,
+    "stock": 12,
+    "tags": [
+        "watches",
+        "women's watches"
+    ],
+    "brand": "Fashion Co.",
+    "sku": "WOM-FAS-WOM-194",
+    "weight": 1,
+    "dimensions": {
+        "width": 26.1,
+        "height": 22.03,
+        "depth": 21.61
+    },
+    "warrantyInformation": "1 year warranty",
+    "shippingInformation": "Ships in 2 weeks",
+    "availabilityStatus": "In Stock",
+    "reviews": [
+        {
+            "rating": 4,
+            "comment": "Very happy with my purchase!",
+            "date": "2025-04-30T09:41:02.054Z",
+            "reviewerName": "Harper Kelly",
+            "reviewerEmail": "harper.kelly@x.dummyjson.com"
+        },
+        {
+            "rating": 5,
+            "comment": "Highly recommended!",
+            "date": "2025-04-30T09:41:02.054Z",
+            "reviewerName": "Gabriel Bailey",
+            "reviewerEmail": "gabriel.bailey@x.dummyjson.com"
+        },
+        {
+            "rating": 5,
+            "comment": "Fast shipping!",
+            "date": "2025-04-30T09:41:02.054Z",
+            "reviewerName": "Natalie Price",
+            "reviewerEmail": "natalie.price@x.dummyjson.com"
+        }
+    ],
+    "returnPolicy": "No return policy",
+    "minimumOrderQuantity": 5,
+    "meta": {
+        "createdAt": "2025-04-30T09:41:02.054Z",
+        "updatedAt": "2025-04-30T09:41:02.054Z",
+        "barcode": "2093537854573",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+    },
+    "images": [
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+    "isDeleted": true,
+    "deletedOn": "2026-02-01T17:32:39.066Z"
 }

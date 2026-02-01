@@ -26,6 +26,8 @@ public class stepDefination1 extends Utility { // Inheriting the utility class t
 	Response response1;
 	Response response2;
 	Response response3;
+	Response response4;
+	
 	//Add Product
 	
 	@Given("the user is on Product endpoint with {int}, {string}, {string}, {string}, {double}, {double}")
@@ -95,6 +97,7 @@ public void user_should_receve_valid_repsone_with_status_code(Integer statuscode
 	
 	
 	// GetProducts 
+	
 	@Given("the user is on product endpoint")
 	public void the_user_is_on_product_endpoint() throws IOException {
 	    // Write code here that turns the phrase above into concrete actions
@@ -203,8 +206,7 @@ public void user_should_receve_valid_repsone_with_status_code(Integer statuscode
 		System.out.println(resourceapi.getResource());
 		
 		response3= request1.when().queryParam("limit", 5).queryParam("skip", 1).queryParam("select", "title","price","rating").get(resourceapi.getResource());
-		
-		
+	
 		
 	}
 
@@ -218,11 +220,47 @@ public void user_should_receve_valid_repsone_with_status_code(Integer statuscode
 	}
 	
 	
+	// Delete Products 
+	
+@Given("the user can able to delete from server")
+public void the_user_can_able_to_delete_from_server() throws IOException {
+    // Write code here that turns the phrase above into concrete actions
+	request1  = given().spec(requestSpecification());
 	
 	
+}
+
+@When("User select {string} with {string} http request and with given {int}")
+public void user_select_with_http_request_and_with_given(String deletePlace, String Delete, Integer userId) {
+    // Write code here that turns the phrase above into concrete actions
+   
+
+	APIResource resource = APIResource.valueOf(deletePlace);
+	
+	System.out.println(resource.getResource());
+	
+	response4= request1.when().delete(resource.getResource()+userId);
 	
 	
-	
+}
+
+
+	@Then("user data should be deleted from server with {int} ok status code")
+	public void user_data_should_be_deleted_from_server_with_ok_status_code(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+		 assertEquals(response4.getStatusCode(), 200);
+		
+	}
+
+	@Then("In the response {string} should be {string}")
+	public void in_the_response_should_be(String key4, String value4) {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+		assertEquals(getJsonPath(response4 , key4) , value4);
+		
+	}
+
 
 	
 

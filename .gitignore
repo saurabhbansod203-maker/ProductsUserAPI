@@ -1,1 +1,30 @@
-/target/
+# --- Security & Environment ---
+.env
+*.key
+secrets.json
+
+# --- Java & Maven ---
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# --- IDE Specific (Eclipse) ---
+.settings/
+.project
+.classpath
+.metadata/
+bin/
+*.tmp
+*.bak
+
+# --- Logs & Reports ---
+*.log
+loggingAPI.txt
+test-output/
+target/cucumber-reports/
+.DS_Store
+
+# --- AI Specific ---
+.langchain4j/
